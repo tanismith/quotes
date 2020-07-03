@@ -37,6 +37,9 @@ header,
 .search img {
   height: inherit;
 }
+.menuIcon {
+  display: none;
+}
 .container {
   height: 100vh;
   grid-template: 100% / 75% 35%;
