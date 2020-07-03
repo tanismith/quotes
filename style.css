@@ -26,6 +26,16 @@ header,
   font-weight: 200;
   color: gray;
   padding-left: 1em;
+  display: flex;
+}
+.search input {
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 10px;
+}
+.search img {
+  height: inherit;
 }
 .container {
   height: 100vh;
