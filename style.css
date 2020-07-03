@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Raleway", system-ui;
+  background-color: white;
+  overflow: hidden;
+  height: 100vh;
+}
+header,
+.search {
+  position: absolute;
+  top: 80px;
+}
+.logo {
+  transform: rotate(-90deg);
+}
+.search {
+  top: 50;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 1.6em;
+  width: 50%;
+  left: 250;
+  font-weight: 200;
+  color: gray;
+  padding-left: 1em;
+}
+.container {
+  height: 100vh;
+  grid-template: 100% / 75% 35%;
+}
+.container,
+.main-layer,
+.menu {
+  display: grid;
+}
+.main-layer {
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  padding: 20px;
+  justify-self: right;
+  align-self: center;
+  grid-gap: 10px;
+}
+.menu {
+  grid-template: 50% 10% 10% 10% 10%/ 100%;
+  width: 100%;
+  height: 400px;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+}
+.menu div {
+  width: 15em;
+}
+li {
+  list-style: none;
+  width: 300;
+  height: 200;
+  overflow: hidden;
+}
+.userPic {
+  border-radius: 50%;
+}
