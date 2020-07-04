@@ -2,24 +2,26 @@
   body {
     overflow: visible;
   }
+  header {
+    height: 100px;
+    background: white;
+  }
   .search {
     width: 74%;
     left: 20;
     top: 20;
     margin-left: 2em;
   }
-  header {
-    position: fixed;
-    top: 120px;
-    left: -30px;
+  .logo{
+      left:-20;
+      top:100;
   }
   .container {
     grid-template: 80% 20%/ 100%;
   }
   .main-layer {
     grid-template: repeat(6, 1fr) / 100%;
-    justify-items: center;
-    margin-top: 50em;
+    margin: 50em auto 0px;
   }
   .menu {
     height: 300px;
@@ -42,8 +44,7 @@
   }
   footer {
     position: fixed;
-    bottom: 100px;
-    left: -170px;
+    bottom: 50px;
     transform: rotate(-90deg);
-  }
+    width: fit-content;
 }

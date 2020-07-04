@@ -8,32 +8,34 @@ body {
   overflow: hidden;
   height: 100vh;
 }
-header,
-.search {
-  position: absolute;
-  top: 80px;
+header {
+  display: flex;
+  width: 100%;
+  height: 40px;
 }
 .logo {
+  position: fixed;
   transform: rotate(-90deg);
+  top: 80px;
+  width: fit-content;
 }
 .search {
-  top: 50;
   border: 1px solid gray;
   border-radius: 10px;
   height: 1.6em;
-  width: 50%;
-  left: 250;
+  width: 40%;
   font-weight: 200;
   color: gray;
   padding-left: 1em;
   display: flex;
-  z-index: 999;
+  margin: 20px auto;
 }
 .search input {
   border: none;
   outline: none;
   background: none;
   padding-left: 10px;
+  width: 100%;
 }
 .search img {
   height: inherit;
