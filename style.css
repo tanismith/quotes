@@ -84,6 +84,7 @@ li:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   content: attr(data-quote);
   color: #333;
   font-size: 14px;
