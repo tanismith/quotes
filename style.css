@@ -27,6 +27,7 @@ header,
   color: gray;
   padding-left: 1em;
   display: flex;
+  z-index: 999;
 }
 .search input {
   border: none;
@@ -93,28 +94,15 @@ li:before {
   font-size: 14px;
   letter-spacing: 1px;
   transform: translateY(-30px);
-}
-li:before,
-li:after {
   position: absolute;
   transition: all 0.4s;
 }
 li:hover:after {
   transform: translateY(15px);
 }
-li:hover:before,
-li:hover:after {
+li:hover:before {
   transform: translateY(0);
   opacity: 0.7;
-}
-li:after {
-  overflow: hidden;
-  top: 0;
-  content: attr(data-author);
-  left: 10%;
-  width: inherit;
-  height: 200px;
-  transform: translateY(40px);
 }
 a {
   text-decoration: none;
