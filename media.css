@@ -9,18 +9,17 @@
     margin-left: 2em;
   }
   header {
+    position: fixed;
     top: 120px;
     left: -30px;
   }
   .container {
-    height: 100vh;
     grid-template: 80% 20%/ 100%;
   }
   .main-layer {
     grid-template: repeat(6, 1fr) / 80%;
     justify-items: center;
-    height: 100%;
-    margin-top: 10em;
+    margin-top: 50em;
   }
   .menu {
     height: 300px;
@@ -34,5 +33,11 @@
     top: 20;
     display: block;
     left: 20;
+  }
+  footer {
+    position: fixed;
+    bottom: 120px;
+    left: -13em;
+    transform: rotate(-90deg);
   }
 }

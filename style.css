@@ -67,6 +67,9 @@ header,
 .menu div {
   width: 15em;
 }
+.menu img {
+  margin: 20px 0;
+}
 li {
   list-style: none;
   width: 300;
@@ -81,7 +84,7 @@ li:before {
   height: 200px;
   background: #fff;
   opacity: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -107,9 +110,21 @@ li:hover:after {
 li:after {
   overflow: hidden;
   top: 0;
-  content: " ";
+  content: attr(data-author);
   left: 10%;
   width: inherit;
   height: 200px;
   transform: translateY(40px);
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  color: rgba(142, 140, 140, 0.851);
 }
