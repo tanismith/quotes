@@ -76,3 +76,39 @@ li {
 .userPic {
   border-radius: 50%;
 }
+li:before {
+  width: inherit;
+  height: 200px;
+  background: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-quote);
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transform: translateY(-30px);
+}
+li:before,
+li:after {
+  position: absolute;
+  transition: all 0.4s;
+}
+li:hover:after {
+  transform: translateY(15px);
+}
+li:hover:before,
+li:hover:after {
+  transform: translateY(0);
+  opacity: 0.7;
+}
+li:after {
+  overflow: hidden;
+  top: 0;
+  content: " ";
+  left: 10%;
+  width: inherit;
+  height: 200px;
+  transform: translateY(40px);
+}
