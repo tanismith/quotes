@@ -94,7 +94,7 @@ li:before {
   content: attr(data-quote);
   color: #333;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   transform: translateY(-30px);
   position: absolute;
   transition: all 0.4s;

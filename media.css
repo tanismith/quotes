@@ -16,6 +16,9 @@
     left: -30;
     top: 120;
   }
+  h1 {
+    font-size: 25px;
+  }
   .container {
     grid-template: 80% 20%/ 100%;
     height: 100%;
@@ -25,6 +28,9 @@
     margin: 0 auto;
     height: inherit;
     padding: 20px 0;
+  }
+  .menu.isActive {
+    left: 0;
   }
   .menu {
     height: 400px;
@@ -37,9 +43,6 @@
     left: -100vw;
     transition: all 0.4s;
   }
-  .menu.isActive {
-    left: 0;
-  }
   .menuIcon {
     position: relative;
     top: 20;
@@ -47,12 +50,12 @@
     left: 20;
     z-index: 999;
   }
-
   footer {
     position: fixed;
     bottom: 50;
     left: -20;
     transform: rotate(-90deg);
     width: fit-content;
+    font-size: 14px;
   }
 }
