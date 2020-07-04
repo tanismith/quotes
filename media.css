@@ -42,8 +42,8 @@
   }
   footer {
     position: fixed;
-    bottom: 3.2em;
-    left: -13em;
+    bottom: 100px;
+    left: -170px;
     transform: rotate(-90deg);
   }
 }
