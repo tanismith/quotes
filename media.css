@@ -27,13 +27,18 @@
     padding: 20px 0;
   }
   .menu {
-    height: 300px;
-    /* background-color: rgba(255, 255, 255, 0.673); */
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.673);
     text-align: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    left: -350px;
+    left: -100vw;
     transition: all 0.4s;
+  }
+  .menu.isActive {
+    left: 0;
   }
   .menuIcon {
     position: relative;
@@ -42,9 +47,7 @@
     left: 20;
     z-index: 999;
   }
-  .menuIcon:after {
-    transition: all 0.4s;
-  }
+
   footer {
     position: fixed;
     bottom: 50;

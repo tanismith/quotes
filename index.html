@@ -20,8 +20,7 @@
     </header>
     <div class="logo">
         <h1>Quotes</h1>
-      </div>
-    
+    </div>
     <div class="container">
       <div class="main-layer">
         <li data-quote=" 'If you want to live a happy life, tie it to a goal, not to people or things.' -Author"><img src="/assets/1 (1).jpg" alt="quote1"/></li>
@@ -31,7 +30,7 @@
         <li data-quote=" 'Curiosity about life in all of its aspects, I think, is still the secret of great creative people.' -Author" ><img src="/assets/5.jpeg" alt="quote5" /></li>
         <li data-quote=" 'In order to write about life first you must live it.' -Author"><img src="/assets/6.jpg" alt="quote6" /></li>
       </div>
-      <div class="menu">
+      <div class="menu isActive">
         <div><a href="#">My profile <br><img class="userPic" src="assets/uiface.jpg" alt="user" width="80" height="80"></a></div>
         <div><a href="#">Quote of the day</a></div>
         <div><a href="#">Favorites</a></div>
@@ -42,5 +41,17 @@
     <footer>
         Made with ♥
     </footer>
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuIcon = document.querySelector(".menuIcon");
+        menuIcon.addEventListener("click", show);
+        function show(){
+            if (menu.classList.contains("isActive")){
+                menu.classList.remove("isActive");
+            }else{
+                menu.classList.add("isActive");
+            } 
+        }
+    </script>
   </body>
 </html>
