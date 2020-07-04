@@ -23,6 +23,7 @@
     grid-template: repeat(6, 1fr) / 100%;
     margin: 0 auto;
     height: inherit;
+    padding: 20px 0;
   }
   .menu {
     height: 300px;
