@@ -16,7 +16,7 @@
     margin-left: 2em;
   }
   .logo {
-    left: -50;
+    left: -60;
     top: 26%;
   }
   h1 {
@@ -56,7 +56,7 @@
   footer {
     position: fixed;
     bottom: 10%;
-    left: -20;
+    left: -30;
     transform: rotate(-90deg);
     width: fit-content;
     font-size: 14px;
