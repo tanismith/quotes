@@ -11,35 +11,43 @@
     <title>Quotes | Tani Smith</title>
   </head>
   <body>
-    <header>
+    <div class="main-container">
+      <header>
         <div><img class="menuIcon"  src="assets/menu-24px.svg" alt="menu" width="30px" height="auto"></div>
-      <div class="search">
-        <img src="assets/search-icon.svg" alt="search-icon" width="20px" height="auto">
-        <input type="text" placeholder="Find inspiration"></input>
-    </div>
-    </header>
-    <div class="logo">
-        <h1>Quotes</h1>
-    </div>
-    <div class="container">
-      <div class="main-layer">
-        <li data-quote=" 'If you want to live a happy life, tie it to a goal, not to people or things.' -Author"><img src="/assets/1 (1).jpg" alt="quote1"/></li>
-        <li data-quote=" 'Life is what happens when you’re busy making other plans.' -Author" ><img src="/assets/2.jpeg" alt="quote2" /></li>
-        <li data-quote=" 'Money and success don’t change people; they merely amplify what is already there.' -Author" ><img src="/assets/3.jpeg" alt="quote3" /></li>
-        <li data-quote=" 'If life were predictable it would cease to be life, and be without flavor.' -Author"><img src="/assets/4.jpeg" alt="quote4" /></li>
-        <li data-quote=" 'Curiosity about life in all of its aspects, I think, is still the secret of great creative people.' -Author" ><img src="/assets/5.jpeg" alt="quote5" /></li>
-        <li data-quote=" 'In order to write about life first you must live it.' -Author"><img src="/assets/6.jpg" alt="quote6" /></li>
+        <div class="search">
+          <img src="assets/search-icon.svg" alt="search-icon" width="20px" height="auto">
+          <input type="text" placeholder="Find inspiration"></input>
+        </div>
+      </header>
+      <div class="logo">
+        <h1>Quotes Gallery</h1>
       </div>
-      <div class="menu isActive">
-        <div><a href="#">My profile <br><img class="userPic" src="assets/uiface.jpg" alt="user" width="80" height="80"></a></div>
-        <div><a href="#">Quote of the day</a></div>
-        <div><a href="#">Favorites</a></div>
-        <div><a href="#">Categories</a></div>
-        <div><a href="mailto:hi@tanismith.com">Contact</a></div>
+      <div class="container">
+        <div class="main-layer">
+          <li data-quote=" 'If you want to live a happy life, tie it to a goal, not to people or things.' -Author"><img src="/assets/1 (1).jpg" alt="quote1"/></li>
+          <li data-quote=" 'Life is what happens when you’re busy making other plans.' -Author" ><img src="/assets/2.jpeg" alt="quote2" /></li>
+          <li data-quote=" 'Money and success don’t change people; they merely amplify what is already there.' -Author" ><img src="/assets/3.jpeg" alt="quote3" /></li>
+          <li data-quote=" 'If life were predictable it would cease to be life, and be without flavor.' -Author"><img src="/assets/4.jpeg" alt="quote4" /></li>
+          <li data-quote=" 'Curiosity about life in all of its aspects, I think, is still the secret of great creative people.' -Author" ><img src="/assets/5.jpeg" alt="quote5" /></li>
+          <li data-quote=" 'In order to write about life first you must live it.' -Author"><img src="/assets/6.jpg" alt="quote6" /></li>
+          <li data-quote=" 'If you want to live a happy life, tie it to a goal, not to people or things.' -Author"><img src="/assets/1 (1).jpg" alt="quote1"/></li>
+          <li data-quote=" 'Life is what happens when you’re busy making other plans.' -Author" ><img src="/assets/2.jpeg" alt="quote2" /></li>
+          <li data-quote=" 'Money and success don’t change people; they merely amplify what is already there.' -Author" ><img src="/assets/3.jpeg" alt="quote3" /></li>
+        </div>
+        <div class="menu isActive">
+          <div><a href="#">My profile <br><img class="userPic" src="assets/uiface.jpg" alt="user" width="80" height="80"></a></div>
+          <div><a href="#">Quote of the day</a></div>
+          <div><a href="#">Favorites</a></div>
+          <div><a href="#">Categories</a></div>
+          <div><a href="mailto:hola@tanismith.com">Contact</a></div>
+        </div>
       </div>
+      
+      
     </div>
+  </div>
     <footer>
-        Made with ♥
+        Made with ♥ by Tani
     </footer>
     <script>
         const menu = document.querySelector(".menu");
@@ -47,9 +55,6 @@
         menuIcon.addEventListener("click", show);
         function show(){
             if (menu.classList.toggle("isActive")){
-            //     menu.classList.remove("isActive");
-            // }else{
-            //     menu.classList.add("isActive");
             } 
         }
     </script>

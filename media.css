@@ -1,6 +1,9 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   body {
     overflow: visible;
+  }
+  .main-container {
+    max-width: 70%;
   }
   header {
     height: 90px;
@@ -13,8 +16,8 @@
     margin-left: 2em;
   }
   .logo {
-    left: -30;
-    top: 120;
+    left: -50;
+    top: 12%;
   }
   h1 {
     font-size: 25px;
@@ -52,10 +55,58 @@
   }
   footer {
     position: fixed;
-    bottom: 50;
+    bottom: 10%;
     left: -20;
     transform: rotate(-90deg);
     width: fit-content;
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1440px) {
+  header {
+  }
+  .menuIcon {
+    display: none;
+  }
+  .logo {
+    left: 0%;
+    top: 30%;
+  }
+  .search {
+    width: 50%;
+  }
+  .container {
+    grid-template: 100%/80% 25%;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2600px) {
+  .main-container {
+    max-width: 80%;
+  }
+  header {
+    height: 10em;
+    width: 95%;
+  }
+  .search {
+    width: 63%;
+    top: 2em;
+    margin: 5em auto;
+  }
+  .menuIcon {
+    display: none;
+  }
+  .logo {
+    left: 3%;
+    top: 35%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .container {
+    grid-template: 100% / 95% 10%;
+  }
+  .main-layer {
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    margin: 0 auto;
   }
 }
