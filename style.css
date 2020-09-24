@@ -46,9 +46,11 @@ header {
   height: inherit;
   margin-left: 1em;
 }
-}
 .menuIcon {
   display: none;
+}
+.menu a:hover {
+  color: #dba9ab;
 }
 .container {
   grid-template: 100% / 80% 20%;
