@@ -9,15 +9,17 @@
     height: 90px;
     background: white;
   }
-  .search {
+  /* .search {
     width: 74%;
     left: 20;
     top: 20;
     margin-left: 2em;
-  }
+  } */
   .logo {
-    left: -60;
-    top: 26%;
+    left: 30%;
+    top: 5%;
+    position: absolute;
+    transform: rotate(0deg);
   }
   h1 {
     font-size: 25px;
@@ -36,10 +38,10 @@
     left: 0;
   }
   .menu {
-    height: 400px;
-    top: 0;
+    height: 40%;
+    top: 12%;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.673);
+    background-color: rgba(255, 255, 255, 1);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -61,6 +63,15 @@
     width: fit-content;
     font-size: 14px;
   }
+  .dayQuoteBox li:before {
+    width: 80%;
+    height: 100px;
+    line-height: 1.5;
+    opacity: 1;
+    transform: translateY(20px);
+    position: absolute;
+    transition: all 0.4s;
+  }
 }
 @media screen and (min-width: 801px) and (max-width: 1440px) {
   .menuIcon {
@@ -68,13 +79,16 @@
   }
   .logo {
     left: 0%;
-    top: 30%;
+    top: 22%;
   }
   .search {
     width: 50%;
   }
   .container {
-    grid-template: 100%/80% 25%;
+    grid-template: 100%/75% 25%;
+  }
+  .menu {
+    grid-template: 10% 20% 55% 10%/ 100%;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 2600px) {
