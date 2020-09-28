@@ -13,7 +13,7 @@
   <body>
     <div class="main-container" id="app">
       <header>
-        <div><img class="menuIcon"  src="assets/menu-24px.svg" alt="menu" width="30px" height="auto"></div>
+        <div @click="isActive = !isActive" ><img class="menuIcon"  src="assets/menu-24px.svg" alt="menu" width="30px" height="auto"></div>
         <!-- <div class="search">
           <img src="assets/search-icon.svg" alt="search-icon" width="20px" height="auto">
           <input v-model="search" type="text" placeholder="Find inspiration"></input>
@@ -34,7 +34,7 @@
           <li data-quote=" 'Life is what happens when you’re busy making other plans.' -Author" ><img src="/assets/2.jpeg" alt="quote2" /></li>
           <li data-quote=" 'Money and success don’t change people; they merely amplify what is already there.' -Author" ><img src="/assets/3.jpeg" alt="quote3" /></li> -->
         </div>
-        <div class="menu isActive">
+        <div class="menu" v-bind:class="{ isActive: isActive }"  >
           <!-- <div><a href="https://tanismith.com/">My profile <br><img class="userPic" src="assets/uiface.jpg" alt="user" width="80" height="80"></a></div> -->
           <div class="getQuotes"><a  @click="getRandomQuotes()"  href="#">Discover new quotes</a></div>
           <div>Quote of the day</div>
@@ -56,7 +56,8 @@
         el: '#app',
         data: {
           search: '',
-          randomquotes: []
+          randomquotes: [],
+          isActive: false
         },
         async mounted() {
           await this.getRandomQuotes()
@@ -80,16 +81,6 @@
         }
       })
      
-    </script>
-    <script>
-        const menu = document.querySelector(".menu");
-        const menuIcon = document.querySelector(".menuIcon");
-        menuIcon.addEventListener("click", show);
-        function show(){
-            if (menu.classList.toggle("isActive")){
-              return true
-            } 
-        }
     </script>
   </body>
 </html>
